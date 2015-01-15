@@ -25,3 +25,6 @@
 * Core:  RDD basics and joins
 * GraphX:  Using PageRank to determine top most-desirable users
 * MLlib:  Using Alternating Least Squares (ALS) to recommend new users
+
+## Presentations
+* Spark And Friends:  pdf/SparkAndFriends.pdf
