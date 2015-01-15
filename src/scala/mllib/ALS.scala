@@ -3,7 +3,7 @@ import org.apache.spark.mllib.recommendation.ALS
 import org.apache.spark.mllib.recommendation.Rating
 
 //Read in the ratings file (fromUserId, toUserId, rating).  These ratings are 0-9.
-val rawRatingsRDD = sc.textFile("spark-after-dark/data/ratings.csv")
+val rawRatingsRDD = sc.textFile("spark-after-dark/data/ratings.csv.gz")
 
 //Create mllib.recommendation.Rating RDD from raw ratings input data
 val ratingsRDD = rawRatingsRDD.map{ rating => 
