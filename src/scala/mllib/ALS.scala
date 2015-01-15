@@ -17,7 +17,7 @@ val trainingRatingsRDD = splitRatingsRDD(0)
 val knownTestRatingsRDD = splitRatingsRDD(1)
 
 //Train the ALS model using the training data and various model hyperparameters
-val model = ALS.train(trainingRatingsRDD, 1, 5, 0.01, 100)
+val model = ALS.train(trainingRatingsRDD, 1, 5, 0.01, 10)
 
 //Compare predictions against the known test data
 val knownTestFromToRDD = knownTestRatingsRDD.map { 
