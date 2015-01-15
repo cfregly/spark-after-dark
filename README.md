@@ -9,8 +9,16 @@
 
 ## Datasets
 * http://www.occamslab.com/petricek/data/
-  * ratings.csv (FromUserID,ToUserID,Rating)
-  * gender.csv (UserID,Gender)
+* ratings.csv (FromUserID,ToUserID,Rating)
+  * FromUserID is user who provided rating
+  * ToUserID is user who has been rated
+  * FromUserIDs range between 1 and 135,359
+  * ToUserIDs range between 1 and 220,970 (not every profile has been rated)
+  * Ratings are on a 1-10 scale where 10 is best (integer ratings only)
+  * Only users who provided at least 20 ratings were included
+  * Users who provided constant ratings were excluded
+* gender.csv (UserID,Gender)
+  * Gender is denoted by a "M" for male and "F" for female and "U" for unknown
 
 ## Examples
 * SQL:  Using SQL and Parquet to query descriptive summary statistics on the datasets
