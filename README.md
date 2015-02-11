@@ -27,4 +27,4 @@
 * MLlib:  Using Alternating Least Squares (ALS) to recommend new users
 
 ## Presentations
-* Spark And Friends:  pdf/SparkAndFriends.pdf
+* Spark After Dark:  pdf/SparkAfterDark.pdf
